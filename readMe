@@ -1,0 +1,15 @@
+=======================================
+    FILE  .htaccess  -> CREATION & CONFIGURATION
+=======================================
+
+Este archivo configura el servidor Apache
+RewriteEngine On   ->  Inicializa el servidor
+Options All -Indexes  -> Inicializa para actualizar los indices
+RewriteRule ^([a-zA-Z0-9/ñÑ-]+)$ index.php?views=$1  -> Reescribe una regla que va a permitir que todo lo que aparezca despues del nombre de la carpeta principal se pueda acceder aunque no exista. No da error.
+                                                                                              La regla establece cualquier caracter minuscula o mayuscula, números y los caracteres especiales ñÑ/-
+
+=======================================
+    DIRECTORY config
+    FILE  app.php  -> CREATION & CONFIGURATION
+    FILE  server.php  -> CREATION & CONFIGURATION
+=======================================
